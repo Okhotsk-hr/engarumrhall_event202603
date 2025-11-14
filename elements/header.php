@@ -155,58 +155,127 @@ if ($_SESSION["windowsize"] >= 870) {
         //width:300px
     }
     ';
-} else {
+} else { //ハンバーガーメニュー
     $header = '
-                <div class="header1">
-                <div class="logo">鉄道模型で遊ぼう</div>
-    <!-- <div>
+ <!-- ヘッダーロゴ -->
         <div class="logo">鉄道模型で遊ぼう</div>
-        <div class="logo">鉄道模型で遊ぼう</div>
-    </div> -->
-                </div>
-                
-                <div class="menu">
-                    <div><p onclick="handleClick(1)">TOP</p></div>
-                    
-                    <div><p onclick="handleClick(2)">Nゲージとは</p></div>
-                   
-                    <div><p onclick="handleClick(3)">車両紹介</p></div>
-                    <!--
-                    <div><p onclick="handleClick(4)">車両紹介</p></div>-->
-                    
-                    <div><p onclick="handleClick(5)">主催・協力</p></div>
-                </div>
 
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="nav">
+
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer_input" class="drawer_open"><span></span></label>
+
+            <!-- メニュー -->
+            <nav class="nav_content">
+                <ul class="nav_list">
+                    <div class="logo">鉄道模型で遊ぼう</div>
+                    <li class="nav_item"><p onclick="handleClick(1)">TOP</p></li>
+                    <li class="nav_item"<p onclick="handleClick(2)">Nゲージとは</p></li>
+                    <li class="nav_item"><p onclick="handleClick(3)">車両紹介</p></li>
+                    <li class="nav_item"><a href="http://engarumrhall.s322.xrea.com/event202403/report/ ">2024年レポート</a></li>
+                    <li class="nav_item"><a href="http://engarumrhall.s322.xrea.com/event202403/syuminokai/ ">
+                            <主催>遠軽鉄道趣味の会
+                        </a></li>
+                    <li class="nav_item"><a href="https://twitter.com/engarumrhall ">
+                            <協力>遠軽鉄道模型館(X)
+                        </a></li>
+                    <li class="nav_item"><a href="https://www.railpark.net/ ">
+                            <協力>Rail Park Sapporo
+                        </a></li>
+                </ul>
+            </nav>
+
+        </div>
     ';
 
     $css .= '
-           .header1{
-        
-                    display: flex;
-                    justify-content: space-between;
+  .header {
+  display: flex;
+  justify-content: space-between;
+}
+  .drawer_open {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100; /* 重なり順を一番上にする */
+  cursor: pointer;
 }
 
-        .logo {
-          font-size: 30px;
-          margin: 0 auto;
-        }
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
 
-        .menu {
-            // width:90%;
-            text-align: center;
-            margin: 0 auto;
-            //background:rgb(68, 229, 250);
-        }
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 8px;
+}
 
-        .menu2{
-            // width:90%;
-            text-align: center;
-            padding:0 20;
-            //background:rgb(255, , 247);
-            color:rgb(255, 255, 255);
-        }
-        .menu_text{
-        //width:300px
-    }
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* メニューのデザイン*/
+.nav_content {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 100%;
+  left: 0%; /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: #fff;
+  transition: 0.5s;
+}
+
+/* メニュー黒ポチを消す */
+.nav_list {
+  list-style: none;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  /* メニューを画面に入れる */
+  bottom: 0px;
+  /* top: 0px; */
+}
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+
     ';
 }
