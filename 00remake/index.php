@@ -75,116 +75,9 @@ if ($_SESSION["size_turn"] == 1) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>リメイクページ</title>
+    <link rel="stylesheet" href="bulk.css">
     <style>
-        <?= $css ?>.menu1 {
-            display: flex;
-            position: fixed;
-            width: 100%;
-            /* width: 70%;
-        background: white; */
-            bottom: 50px;
-            /*自分が固定したい位置(例は上から0pxの位置)*/
-            left: 10px;
-            /*自分が固定したい位置(例は左から10pxの位置)*/
-        }
-
-        .menu2 {
-            display: flex;
-            position: fixed;
-            width: 100%;
-            /* width: 70%;
-        background: white; */
-            bottom: 0px;
-            /*自分が固定したい位置(例は上から0pxの位置)*/
-            left: 10px;
-            /*自分が固定したい位置(例は左から10pxの位置)*/
-        }
-
-        .t_menu {
-            width: 25%;
-            height: 100px;
-            background: blue;
-        }
-
-        /* ページ構成用 */
-
-        body {
-            width: 95%;
-            margin: 0 auto;
-        }
-
-        header {
-            align-items: center;
-            padding: 0 20px;
-            background: #fac344;
-        }
-
-
-        .header1 {
-
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .logo {
-            font-size: 30px;
-            margin: 0 auto;
-        }
-
-
-        .info_title {
-            position: relative;
-            font-size: 26.357142857143px;
-        }
-
-        .announcement {
-            position: relative;
-            font-size: 18.45px;
-        }
-
-        .poster {
-            width: 100%;
-        }
-
-        .befor_info {
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        .title {
-            font-size: 40px;
-        }
-
-        p {
-            font-size: 20px;
-        }
-
-        .text1 {
-            font-size: 35px;
-        }
-
-        .layout {
-            line-height: 20px;
-        }
-
-        .layout_title {
-            font-size: 28px;
-        }
-
-        .date {
-            line-height: 10px;
-        }
-
-
-        .place_text {
-            /* width: 270px; */
-            line-height: 10px;
-        }
-
-        .data {
-            width: 280px;
-            margin: auto;
-        }
+        <?= $css ?>
     </style>
 </head>
 
@@ -229,13 +122,23 @@ if ($_SESSION["size_turn"] == 1) {
     </div>
     </div>
 
-    <!-- <div class="menu">
-        <div class="t_menu">TOP</div>
-        <div class="t_menu">Nゲージ</div>
-        <div class="t_menu">車両紹介</div>
-        <div class="t_menu">主催・協力</div>
-    </div> -->
-    <?= $v_menu ?>
+    <div class="menub">
+        <div class="menu1">
+            <!-- <div class="t_menu">TOP</div>
+            <div class="t_menu">Nゲージ</div> -->
+
+            <button class="t_menu">TOP</button>
+            <button class="t_menu">Nゲージ</button>
+        </div>
+
+        <div class="menu2">
+            <!-- <div class="t_menu">車両紹介</div>
+            <div class="t_menu">主催・協力</div> -->
+            <button class="t_menu">車両紹介</button>
+            <button class="t_menu">主催・協力</button>
+        </div>
+    </div>
+
     <div style="height: 100px"></div>
     <script>
         // クリックイベントを設定
