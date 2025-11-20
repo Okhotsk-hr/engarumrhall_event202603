@@ -1,3 +1,3 @@
 <?php
 
-if(isset($_SESSION["turn"]))
+// if(isset($_SESSION["turn"]))
