@@ -122,22 +122,20 @@ if ($_SESSION["size_turn"] == 1) {
     </div>
     </div>
 
-    <div class="menub">
+    <!-- <div class="menub">
         <div class="menu1">
-            <!-- <div class="t_menu">TOP</div>
-            <div class="t_menu">Nゲージ</div> -->
 
             <button class="t_menu">TOP</button>
             <button class="t_menu">Nゲージ</button>
         </div>
 
         <div class="menu2">
-            <!-- <div class="t_menu">車両紹介</div>
-            <div class="t_menu">主催・協力</div> -->
             <button class="t_menu">車両紹介</button>
             <button class="t_menu">主催・協力</button>
         </div>
-    </div>
+    </div> -->
+
+    <?= $menu_show ?>
 
     <div style="height: 100px"></div>
     <script>
