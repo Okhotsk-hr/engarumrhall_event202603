@@ -21,3 +21,7 @@ https://jajaaan.co.jp/css/button/
 
 2025 年 11 月 24 日
 下部メニューを PHP 化
+
+2025 年 11 月 25 日
+ボタンの動作を追加
+JavaScript を PHP 化(4 ボタン版のみ)
