@@ -157,6 +157,8 @@ if ($_SESSION["size_turn"] == 1) {
 
                 });
         }
+
+        <?= $menu_js ?>
     </script>
 
 </body>
