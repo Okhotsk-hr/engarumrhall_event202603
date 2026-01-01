@@ -75,10 +75,10 @@ if ($_SESSION["size_turn"] == 1) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>リメイクページ</title>
-    <link rel="stylesheet" href="bulk.css">
     <style>
         <?= $css ?>
     </style>
+    <link rel="stylesheet" href="bulk.css">
 </head>
 
 <body>

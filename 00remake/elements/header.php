@@ -43,7 +43,7 @@ $header = '
 
 if ($_SESSION["windowsize"] >= 870) {
 
-    $header = '
+  $header = '
                 <div class="header1">
                 <div class="logo">鉄道模型で遊ぼう</div>
     <!-- <div>
@@ -66,7 +66,7 @@ if ($_SESSION["windowsize"] >= 870) {
 
     ';
 
-    $css .= '
+  $css .= '
         .header1{
         
                     display: flex;
@@ -86,6 +86,16 @@ if ($_SESSION["windowsize"] >= 870) {
             //background:rgb(68, 229, 250);
         }
 
+        .menu1{
+            width:750px;
+            margin: 0 auto;
+            padding:0 20;
+            display: flex;
+            justify-content: space-evenly;
+            color:rgb(76, 227, 247);
+            //background:rgb(255, , 247);
+            color:rgb(255, 255, 255);
+        }
         .menu2{
             width:750px;
             margin: 0 auto;
@@ -101,7 +111,7 @@ if ($_SESSION["windowsize"] >= 870) {
     }
         ';
 } else if ($_SESSION["windowsize"] >= 650) {
-    $header = '
+  $header = '
                 <div class="header1">
                 <div class="logo">鉄道模型で遊ぼう</div>
     <!-- <div>
@@ -124,7 +134,7 @@ if ($_SESSION["windowsize"] >= 870) {
 
     ';
 
-    $css .= '
+  $css .= '
            .header1{
         
                     display: flex;
@@ -142,6 +152,14 @@ if ($_SESSION["windowsize"] >= 870) {
             margin: 0 auto;
             //background:rgb(68, 229, 250);
         }
+                    .menu1{
+            // width:90%;
+            text-align: center;
+            margin: 0 auto;
+            padding:0 20;
+            //background:rgb(255, , 247);
+            color:rgb(255, 255, 255);
+        }
 
         .menu2{
             // width:90%;
@@ -156,7 +174,7 @@ if ($_SESSION["windowsize"] >= 870) {
     }
     ';
 } else { //ハンバーガーメニュー
-    $header = '
+  $header = '
  <!-- ヘッダーロゴ -->
         <div class="logo">鉄道模型で遊ぼう</div>
 
@@ -192,7 +210,7 @@ if ($_SESSION["windowsize"] >= 870) {
         </div>
     ';
 
-    $css .= '
+  $css .= '
   .header {
   display: flex;
   justify-content: space-between;
