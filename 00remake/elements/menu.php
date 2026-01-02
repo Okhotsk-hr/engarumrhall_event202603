@@ -23,22 +23,22 @@ if (count($menu_list) == 4) {
     $menu_js = '
         function ' . $menu_list[0][2] . ' {
             alert("' . $menu_list[0][0] . '");
-            //window.location.href = "#";
+            window.location.href = "' . $menu_list[0][1] . '";
         }
 
         function ' . $menu_list[1][2] . ' {
             alert("Nゲージ");
-            //window.location.href = "#";
+            window.location.href = "' . $menu_list[1][1] . '";
         }
 
-        function ' . $menu_list[3][2] . ' {
+        function ' . $menu_list[2][2] . ' {
             alert("車両紹介");
-            //window.location.href = "#";
+            window.location.href = "' . $menu_list[2][2] . '";
         }
 
         function ' . $menu_list[3][2] . ' {
             alert("主催・協力");
-            //window.location.href = "#";
+            window.location.href = "' . $menu_list[3][2] . '";
         }
     ';
 } else if (count($menu_list) == 6) {

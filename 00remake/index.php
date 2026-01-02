@@ -101,7 +101,7 @@ if ($_SESSION["size_turn"] == 1) {
         <p>
             車両の持ち込みOK<br />
             車両を持っていなくても<br />
-            用意している車両から<br />
+            レンタル車両から<br />
             好きな車両を選んで<br />
             走らせられます
         </p>
@@ -122,9 +122,22 @@ if ($_SESSION["size_turn"] == 1) {
     </div>
     </div>
 
-    <?= $menu_show ?>
 
+
+    <div style="height: 10px"></div>
+
+    <footer>
+        <div>鉄道模型で遊ぼう</div>
+        <div>
+            <li>遠軽鉄道趣味の会</li>
+            <li>Rail Park Sapporo</li>
+            <li>Ichigo鉄道</li>
+        </div>
+    </footer>
     <div style="height: 100px"></div>
+
+
+    <?= $menu_show ?>
     <script>
         // クリックイベントを設定
         function handleClick(hnum) {
