@@ -42,12 +42,12 @@ header {
 
 .menu1 {
   display: flex;
-  width: 90%;
+  width: 100%;
 }
 
 .menu2 {
   display: flex;
-  width: 90%;
+  width: 100%;
 }
 
 .t_menu {
@@ -64,6 +64,20 @@ header {
 .info_title {
   position: relative;
   font-size: 26.357142857143px;
+  width:330px;
+  margin: 0 auto;
+}
+
+.layout_title {
+  font-size: 28px;
+  width:330px;
+  margin: 0 auto;
+}
+
+.layout {
+  line-height: 20px;
+  width:330px;
+  margin: 0 auto;
 }
 
 ';
@@ -119,6 +133,14 @@ header {
   font-size: 26.357142857143px;
 }
 
+
+.layout_title {
+  font-size: 28px;
+}
+
+.layout {
+  line-height: 20px;
+}
 
 ';
 }

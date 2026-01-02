@@ -91,8 +91,8 @@ if ($_SESSION["size_turn"] == 1) {
     <?= $windowcheck ?>
 
     <div class="info_title">
-        第二回鉄道模型で遊ぼう <br />
-        2025年3月29,30日開催！！
+        第三回鉄道模型で遊ぼう <br />
+        2026年3月28,29日開催！！
     </div>
 
     <p class="layout_title">各レイアウトにて <br />無料運転体験あり!</p>
@@ -111,9 +111,9 @@ if ($_SESSION["size_turn"] == 1) {
     <div class="place">
         <div>　</div>
         <div class="place_text">
-            <p class="title">場所</p>
+            <p class="title">会場</p>
             <p>遠軽町芸術文化交流プラザ</p>
-            <p>メトロプラザ2F多目的室4・5</p>
+            <p>メトロプラザ2F多目的室4・5・6</p>
         </div>
     </div>
 
@@ -121,19 +121,6 @@ if ($_SESSION["size_turn"] == 1) {
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.1807237712064!2d143.517969276063!3d44.05897667108584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f12a1305c4d097b%3A0xb256d5c14fb15c6d!2z6YGg6Lu955S66Iq46KGT5paH5YyW5Lqk5rWB44OX44Op44K2IOODoeODiOODreODl-ODqeOCtg!5e0!3m2!1sja!2sjp!4v1707444218871!5m2!1sja!2sjp" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </div>
-
-    <!-- <div class="menub">
-        <div class="menu1">
-
-            <button class="t_menu">TOP</button>
-            <button class="t_menu">Nゲージ</button>
-        </div>
-
-        <div class="menu2">
-            <button class="t_menu">車両紹介</button>
-            <button class="t_menu">主催・協力</button>
-        </div>
-    </div> -->
 
     <?= $menu_show ?>
 
