@@ -1,57 +1,30 @@
-.menub {
-  position: fixed;
-  width: 100%;
-  /* width: 70%;
-        background: white; */
-  bottom: 0px;
-  /*自分が固定したい位置(例は上から0pxの位置)*/
-  left: 0px;
-  /*自分が固定したい位置(例は左から10pxの位置)*/
-}
-
-.menu1 {
-  display: flex;
-  width: 100%;
-}
-
-.menu2 {
-  display: flex;
-  width: 100%;
-}
-
-.t_menu {
-  width: 50%;
-  height: 40px;
-  /* background: blue; */
-}
-
 /* ページ構成用 */
 
-body {
+/* body {
   width: 95%;
   margin: 0 auto;
-}
+} */
 
-header {
+/* header {
   align-items: center;
   padding: 0 20px;
   background: #fac344;
-}
+} */
 
-.header1 {
+/* .header1 {
   display: flex;
   justify-content: space-between;
-}
+} */
 
-.logo {
+/* .logo {
   font-size: 30px;
   margin: 0 auto;
-}
+} */
 
-.info_title {
+/* .info_title {
   position: relative;
   font-size: 26.357142857143px;
-}
+} */
 
 .announcement {
   position: relative;
@@ -79,13 +52,13 @@ p {
   font-size: 35px;
 }
 
-.layout {
+/* .layout {
   line-height: 20px;
-}
-
+} */
+/* 
 .layout_title {
   font-size: 28px;
-}
+} */
 
 .date {
   line-height: 10px;
